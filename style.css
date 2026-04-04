@@ -2600,6 +2600,8 @@ a {
     border-radius: 50px;
     padding: 0.8rem 1.7rem;
     transition: all 0.3s ease;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-phone a {
@@ -2611,6 +2613,7 @@ a {
     justify-content: center;
     gap: 10px;
     text-decoration: none;
+    word-break: break-word;
 }
 
 .contact-phone a:hover { color: #fff; }
