@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackfiniX 2026</title>
+    <link rel="icon" type="image/png" href="assets/HackfiniX Favicon.png">
+    <meta name="description"
+        content="Join HackfiniX 2026, a thrilling 24-hour national hackathon powering the next generation of innovation at Cambridge Institute of Technology North Campus.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <canvas id="canvas-bg"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" style="color: inherit; text-decoration: none;">HackFiniX<span
+                        class="highlight">.</span></a>
+            </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#problems">Problem Statements</a>
+
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Download <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.7rem; margin-left: 4px;"></i></a>
+                    <div class="dropdown-content glass-card">
+                        <a href="assets/HackfiniX Template.pptx" download>PPT Template</a>
+                        <a href="assets/HackfiniX - Problem Statements.pdf" download>Problem Statements</a>
+                        <a href="assets/hackfinix_brochure.pdf">Brochure</a>
+                    </div>
+                </div>
+
+                <a href="https://unstop.com/hackathons/hackfinix-2026-cambridge-institute-of-technology-north-campus-bengaluru-1671676"
+                    target="_blank" class="btn-sm btn-glow">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- 1. Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-partners hero-partners--top">
+                    <p class="hero-partners-label">Organized by</p>
+                    <div class="hero-partners-logos">
+                        <div class="partner-pill">
+                            <img src="assets/cit.png?v=2" alt="CIT North Campus">
+                        </div>
+                        <div class="partner-pill">
+                            <img src="assets/ieee.png?v=2" alt="IEEE CITNC Student Branch">
+                        </div>
+                        <div class="partner-pill">
+                            <img src="assets/iic.png?v=2" alt="Institution's Innovation Council">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge">🚀 The Ultimate 24-Hour Hackathon</div>
+                <h1 class="hero-title">
+                    <span class="text-glow">HACKFINIX</span> <br>
+                    <span class="text-outline">2026</span>
+                </h1>
+                <h2 class="hero-subtitle">Powering the Next Generation of Innovation</h2>
+                <p class="hero-description">
+                    Join a thrilling 24-hour national hackathon where innovators, developers, and creators collaborate
+                    to transform ideas into impactful solutions.
+                </p>
+
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div>
+                            <strong>13 - 14 August, 2026</strong>
+                            <span>24 Hours Non-Stop</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>CIT North Campus</strong>
+                            <span>Bengaluru</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://unstop.com/hackathons/hackfinix-2026-cambridge-institute-of-technology-north-campus-bengaluru-1671676"
+                        target="_blank" class="btn btn-primary btn-glow">Register Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#problems" class="btn btn-outline">View Problem Statements</a>
+                </div>
+            </div>
+
+            <div class="hero-decorations">
+                <div class="floating-icon icon-1"><i class="fa-brands fa-react"></i></div>
+                <div class="floating-icon icon-2"><i class="fa-brands fa-python"></i></div>
+                <div class="floating-icon icon-3"><i class="fa-solid fa-code"></i></div>
+                <div class="floating-icon icon-4"><i class="fa-solid fa-microchip"></i></div>
+            </div>
+        </section>
+
+        <!-- 2. About HackfiniX -->
+        <section class="about section" id="about">
+            <div class="container grids">
+                <div class="about-content">
+                    <h2 class="section-title">About <span class="highlight">HackfiniX</span></h2>
+                    <p>HackfiniX 2026 is a 24-hour national-level hackathon that brings together students, developers,
+                        designers, and innovators from across the country. Participants collaborate, build solutions,
+                        and
+                        push the boundaries of creativity and technology.</p>
+                    <p>Hosted by <strong>Techfinity Club</strong> at <strong>Cambridge Institute of Technology North
+                            Campus</strong>, this event fosters innovation, teamwork, and real-world problem solving.
+                    </p>
+                </div>
+                <div class="about-visual glow-box">
+                    <div class="glass-card light-glass-box">
+                        <div class="stat-row">
+                            <div class="stat">
+                                <span class="stat-num">24<small>Hrs</small></span>
+                                <span class="stat-label">Coding</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">32</span>
+                                <span class="stat-label">Teams</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">₹12.8L+</span>
+                                <span class="stat-label">Prizes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prizes Section -->
+        <section class="prizes section" id="prizes">
+            <div class="container">
+                <div class="glass-card prizes-container">
+                    <h2 class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Theme-wise <span
+                            class="highlight">Prizes</span></h2>
+                    <p class="prizes-subtitle">For each hackathon theme, there will be a Winner and a Runner-Up who will
+                        receive exciting prizes.</p>
+
+                    <div class="prize-cards-grid">
+                        <div class="prize-card glow-box">
+                            <div class="prize-card-inner glass-card">
+                                <div class="prize-icon first-place"><i class="fa-solid fa-trophy"></i></div>
+                                <h3>Winner</h3>
+                                <div class="prize-amount">₹40,000</div>
+                                <div class="prize-per">per theme</div>
+                            </div>
+                        </div>
+                        <div class="prize-card glow-box">
+                            <div class="prize-card-inner glass-card">
+                                <div class="prize-icon second-place"><i class="fa-solid fa-trophy"></i></div>
+                                <h3>Runner-Up</h3>
+                                <div class="prize-amount text-secondary">₹20,000</div>
+                                <div class="prize-per">per theme</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="themes-list">
+                        <p class="text-center">Applicable across all four themes:</p>
+                        <div class="theme-badges">
+                            <span class="theme-badge">Smart Manufacturing & Industry 5.0</span>
+                            <span class="theme-badge">Human-AI Collaboration</span>
+                            <span class="theme-badge">Sustainability & Green Technologies</span>
+                            <span class="theme-badge">Industrial Cybersecurity</span>
+                        </div>
+                    </div>
+
+                    <p class="text-center" style="margin-top: 2rem;">Special Prizes:</p>
+
+                    <div class="incubation-card glow-box" style="margin-top: 1.5rem;">
+                        <div class="incubation-card-inner">
+                            <div class="incubation-icon-wrap">
+                                <div class="incubation-icon"><i class="fa-solid fa-palette"></i></div>
+                            </div>
+                            <div class="incubation-details">
+                                <h3>Best UI/UX Award</h3>
+                                <p class="incubation-subtitle">Outstanding user interface and experience</p>
+                            </div>
+                            <div class="incubation-amount">₹10,000</div>
+                        </div>
+                    </div>
+
+                    <div class="incubation-card glow-box">
+                        <div class="incubation-card-inner">
+                            <div class="incubation-icon-wrap">
+                                <div class="incubation-icon"><i class="fa-solid fa-rocket"></i></div>
+                            </div>
+                            <div class="incubation-details">
+                                <h3>Incubation Support for Best Ideas</h3>
+                                <p class="incubation-subtitle">Top ideas get real-world incubation backing</p>
+                            </div>
+                            <div class="incubation-amount">Upto ₹10L</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Why Participate -->
+        <section class="features section" id="features">
+            <div class="container">
+                <h2 class="section-title text-center">Why <span class="highlight">Participate?</span></h2>
+                <div class="feature-grid">
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Innovation</h3>
+                        <p>Work on real-world problems and develop impactful solutions that make a difference.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Collaboration</h3>
+                        <p>Meet and network with talented developers, designers, and innovators.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Learning</h3>
+                        <p>Enhance your technical abilities and fast-track your problem-solving skills.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>Recognition</h3>
+                        <p>Win exciting prizes, mentorship opportunities, and gain national-level exposure.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Event Details -->
+        <section class="details section">
+            <div class="container">
+                <div class="details-wrapper glass-card glow-box light-glass-box">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <h4>Event</h4>
+                        <p>HackfiniX 2026</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <h4>Duration</h4>
+                        <p>24 Hours</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>Mode</h4>
+                        <p>Offline Hackathon</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <h4>Date</h4>
+                        <p>13 - 14 August, 2026</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <h4>Venue</h4>
+                        <p>CIT North Campus, Bengaluru</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h4>Team Size</h4>
+                        <p>3 - 4 Members</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Organizers Section -->
+        <section class="organizers section" id="organizers">
+            <div class="container">
+                <h2 class="section-title text-center">Our <span class="highlight">Organizers</span></h2>
+                <div class="organizers-grid">
+                    <div class="organizer-logo">
+                        <img src="assets/cit.png?v=2" alt="Cambridge Institute of Technology">
+                        <span>CIT North Campus</span>
+                    </div>
+                    <div class="organizer-logo">
+                        <img src="assets/ieee.png?v=2" alt="IEEE CITNC">
+                        <span>IEEE CITNC Student Branch</span>
+                    </div>
+                    <div class="organizer-logo">
+                        <img src="assets/iic.png?v=2" alt="Institution's Innovation Council">
+                        <span>Institution's Innovation Council</span>
+                    </div>
+                    <div class="organizer-logo">
+                        <img src="assets/techfinity.png?v=2" alt="Techfinity Club">
+                        <span>Techfinity Club</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Timeline Preview -->
+        <section class="timeline section" id="timeline">
+            <div class="container">
+                <h2 class="section-title text-center">Event <span class="highlight">Timeline</span></h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">02 April, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Registration Opens</h3>
+                            <p>Start assembling your team and register for the event with a PPT.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">02 April, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Problem Statements Release</h3>
+                            <p>Themes and challenges are officially revealed.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">30 May, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>PPT Submission Deadline</h3>
+                            <p>Last date for team registration and PPT submission.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">20 June, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Shortlisted Teams Announcement</h3>
+                            <p>The top teams moving to the offline phase are announced.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">13 August, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Hackathon Kickoff</h3>
+                            <p>Opening ceremony and start of the 24-hour building phase.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">13 - 14 August, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Development Phase</h3>
+                            <p>Non-stop coding, mentoring sessions, and fun activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">14 August, 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Presentations & Winners</h3>
+                            <p>Pitch your solution, followed by the closing ceremony.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Call To Action -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta-box glass-card glow-box text-center light-glass-box">
+                    <h2>Ready to Build the <span class="highlight">Future?</span></h2>
+                    <p>Join some of the brightest innovators and showcase your skills at HackfiniX 2026.</p>
+                    <div class="cta-buttons">
+                        <a href="https://unstop.com/hackathons/hackfinix-2026-cambridge-institute-of-technology-north-campus-bengaluru-1671676"
+                            target="_blank" class="btn btn-primary btn-glow btn-lg">Register Now <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://chat.whatsapp.com/FaDT4SSxkDhIzCkRcoKRHn" target="_blank"
+                            class="btn btn-outline btn-lg"><i class="fa-brands fa-whatsapp"></i> Join
+                            Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Problems Page -->
+    <div id="problems-page" style="display: none;">
+        <section class="section" style="padding-top: 150px; min-height: 100vh;">
+            <div class="container">
+                <h2 class="section-title text-center text-glow"
+                    style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--color-accent); text-shadow: 0 0 15px rgba(72,202,228,0.5);">
+                    Problem Tracks</h2>
+                <p class="text-center" style="font-size: 1.1rem; margin-bottom: 2rem;">04 Industry 5.0–Aligned Problem
+                    Tracks</p>
+
+                <!-- About the Tracks Intro -->
+                <div class="tracks-intro-box">
+                    <div class="tracks-intro-icon"><i class="fa-solid fa-industry"></i></div>
+                    <p>These problem tracks are designed around <strong>Industry 5.0</strong> principles, focusing on
+                        human-centric innovation, sustainability, and resilient systems. Participants are expected to
+                        build practical, scalable solutions aligned with real-world industry challenges using emerging
+                        technologies like <strong>AI, IoT, and data analytics</strong>.</p>
+                </div>
+
+                <!-- Track Cards Grid -->
+                <div class="tracks-grid">
+
+                    <!-- Track 01 -->
+                    <div class="track-card track-card--cyan">
+                        <div class="track-card__header">
+                            <div class="track-card__number">01</div>
+                            <div class="track-card__icon"><i class="fa-solid fa-gear"></i></div>
+                        </div>
+                        <h3 class="track-card__title">Smart Manufacturing & Industry 5.0</h3>
+                        <div class="track-card__body">
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-briefcase"></i> Industry Focus
+                                </div>
+                                <p>Automotive, aerospace manufacturing, robotics, precision engineering.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-crosshairs"></i> Problem Focus
+                                </div>
+                                <p>Create AI or IoT solutions for predictive maintenance, factory efficiency, and worker
+                                    safety.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-box-open"></i> Expected Output
+                                </div>
+                                <p>Manufacturing dashboard, digital twin, or smart factory monitoring system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 02 -->
+                    <div class="track-card track-card--purple">
+                        <div class="track-card__header">
+                            <div class="track-card__number">02</div>
+                            <div class="track-card__icon"><i class="fa-solid fa-brain"></i></div>
+                        </div>
+                        <h3 class="track-card__title">Human–AI Collaboration</h3>
+                        <div class="track-card__body">
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-briefcase"></i> Industry Focus
+                                </div>
+                                <p>AI, IT services, smart manufacturing, enterprise automation, healthcare AI.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-crosshairs"></i> Problem Focus
+                                </div>
+                                <p>Build AI assistants and human-in-the-loop systems that improve productivity and
+                                    decision-making.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-box-open"></i> Expected Output
+                                </div>
+                                <p>Increased productivity & efficiency, improved decision-making quality, system
+                                    reliability & safety, skill augmentation, scalable & adaptive project systems,
+                                    explainable AI dashboard, or collaboration platform.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 03 -->
+                    <div class="track-card track-card--green">
+                        <div class="track-card__header">
+                            <div class="track-card__number">03</div>
+                            <div class="track-card__icon"><i class="fa-solid fa-leaf"></i></div>
+                        </div>
+                        <h3 class="track-card__title">Sustainability & Green Technologies</h3>
+                        <div class="track-card__body">
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-briefcase"></i> Industry Focus
+                                </div>
+                                <p>Renewable energy, green manufacturing, ESG compliance.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-crosshairs"></i> Problem Focus
+                                </div>
+                                <p>Develop solutions to monitor and reduce energy use, carbon emissions, and industrial
+                                    waste.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-box-open"></i> Expected Output
+                                </div>
+                                <p>Carbon tracking dashboard, sustainability analytics platform, or energy monitoring
+                                    system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Track 04 -->
+                    <div class="track-card track-card--red">
+                        <div class="track-card__header">
+                            <div class="track-card__number">04</div>
+                            <div class="track-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        </div>
+                        <h3 class="track-card__title">Industrial Cybersecurity</h3>
+                        <div class="track-card__body">
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-briefcase"></i> Industry Focus
+                                </div>
+                                <p>Industrial security, cloud security, enterprise cybersecurity.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-crosshairs"></i> Problem Focus
+                                </div>
+                                <p>Build systems to detect and prevent cyber threats in industrial networks and IoT
+                                    devices.</p>
+                            </div>
+                            <div class="track-card__field">
+                                <div class="track-card__label"><i class="fa-solid fa-box-open"></i> Expected Output
+                                </div>
+                                <p>Threat detection model, SOC dashboard, or cybersecurity monitoring platform.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FAQs Page -->
+    <div id="faqs-page" style="display: none;">
+        <section class="section" style="padding-top: 150px; min-height: 100vh;">
+            <div class="container">
+                <h2 class="section-title text-center text-glow"
+                    style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--color-accent); text-shadow: 0 0 15px rgba(72,202,228,0.5);">
+                    FAQs</h2>
+                <p class="text-center"
+                    style="font-size: 1.1rem; margin: 0 auto 4rem auto; max-width: 800px; line-height: 1.6;">Got
+                    questions about HackfiniX? We’ve got you covered. Explore everything you need to know—from
+                    registration and submissions to rules, rewards, and event details.</p>
+
+                <div class="accordion">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item active">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What is HackfiniX?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>HackfiniX is a 24-hour hackathon designed to foster innovation and creativity by
+                                    challenging participants to solve real-world problems aligned with Industry 5.0. It
+                                    brings together students to collaborate, build impactful solutions, and showcase
+                                    their technical and problem-solving skills.</p>
+                                <p style="margin-top: 10px;">Participants can explore the detailed problem statements in
+                                    the Problem Statements section.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Who can participate in HackfiniX?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Open to undergraduate students pursuing BE/BTech, BCA/MCA, BSc (CS), and other
+                                    relevant degrees.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What is the team size allowed for participation?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Each team must consist of 3 to 4 members. Teams can be formed across different
+                                    departments and semesters, encouraging diverse perspectives and collaborative
+                                    problem-solving.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What is the last date for team registration and PPT
+                                    submission?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>The last date for team registration and submission of the PPT (in PDF format) is 30th
+                                    May 2026.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What is the selection/shortlisting process?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Teams will be shortlisted based on the evaluation of their submitted presentation
+                                    (PPT), which must be uploaded in PDF format. The file should be named in the format:
+                                    team_name.pdf. Submissions will be assessed on the basis of idea clarity,
+                                    innovation, and relevance to the given problem statements.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Is there any registration fee for HackfiniX?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Shortlisted teams are required to pay a registration fee of ₹100 per participant.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What should the PPT include?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Participants are required to follow the official PPT template provided by the
+                                    organizers. The template, along with the rulebook and brochure, is available on our
+                                    website and Unstop under the “Download Attachments” section. Teams are advised to
+                                    adhere to the given format and guidelines while preparing their submission.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">What are the evaluation criteria for shortlisting/final
+                                    judging?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Projects will be evaluated based on the following criteria:</p>
+                                <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                                    <li>Innovation & Creativity</li>
+                                    <li>Technical Implementation</li>
+                                    <li>Functionality & Feasibility</li>
+                                    <li>Impact & Relevance</li>
+                                    <li>Presentation & Demonstration</li>
+                                </ul>
+                                <p style="margin-top: 10px;">The decision of the judging panel will be final and
+                                    binding.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Will participants receive certificates or rewards?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Yes, HackfiniX offers an exciting prize pool worth ₹2.6 lakh, along with additional
+                                    rewards and gifts. All participants will also receive certificates of participation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Where will HackfiniX be conducted?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>HackfiniX will be held at Cambridge Institute of Technology North Campus, Bangalore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 11 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Will accommodation and food be provided?</div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Yes, accommodation and food will be provided for all participants throughout the
+                                    duration of the hackathon.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 12 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title-wrap">
+                                <div class="accordion-icon"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="accordion-title">Whom should participants contact for queries or support?
+                                </div>
+                            </div>
+                            <div class="accordion-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>For any queries or support, participants can find the relevant contact details at the
+                                    end of our homepage on the official website, as well as on our Unstop page. Feel
+                                    free to reach out to us for assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" style="display: none; animation: fadeIn 0.5s ease;">
+        <section class="section" style="padding-top: 150px; min-height: 100vh;">
+            <div class="container">
+                <h2 class="section-title text-center text-glow"
+                    style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--color-accent); text-shadow: 0 0 15px rgba(72,202,228,0.5);">
+                    Get in Touch</h2>
+                <p class="text-center"
+                    style="font-size: 1.1rem; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Have questions or need assistance? We’re here to help. Reach out to the HackfiniX team through the
+                    contact details below.</p>
+
+                <h3 class="contact-category-title text-center">Faculty Coordinators</h3>
+                <div class="contact-grid">
+                    <div class="glass-card contact-card text-center contact-card--purple">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Sugumar.jpeg" alt="Dr. S J Sugumar">
+                            </div>
+                            <h3 class="contact-name">Dr. S J Sugumar</h3>
+                            <p class="contact-role">Faculty Convenor</p>
+                            <div class="contact-phone">
+                                <a href="tel:+918903618874">
+                                    <i class="fa-solid fa-phone"></i> +91 89036 18874
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-card text-center contact-card--blue">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Rajaramakrishna.jpeg" alt="Dr. R. Rajaramakrishna">
+                            </div>
+                            <h3 class="contact-name">Dr. R. Rajaramakrishna</h3>
+                            <p class="contact-role">IEEE Advisor</p>
+                            <div class="contact-phone">
+                                <a href="tel:+919036941887">
+                                    <i class="fa-solid fa-phone"></i> +91 90369 41887
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-card text-center contact-card--orange">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Abhilash.jpeg" alt="Dr. Abhilash S G">
+                            </div>
+                            <h3 class="contact-name">Dr. Abhilash S G</h3>
+                            <p class="contact-role">IIC Convenor</p>
+                            <div class="contact-phone"
+                                style="border-radius: 12px; padding: 0.8rem 1.2rem; width: 100%; max-width: 250px;">
+                                <a href="mailto:abhilash.mech.nc@cambridge.edu.in"
+                                    style="font-size: 0.85rem; line-height: 1.4; letter-spacing: 0.5px;">
+                                    <i class="fa-solid fa-envelope" style="font-size: 1.3rem; margin-right: 4px;"></i>
+                                    <span style="text-align: left;">abhilash.mech.nc<br>@cambridge.edu.in</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="contact-category-title text-center">Student Coordinators</h3>
+                <div class="contact-grid">
+                    <div class="glass-card contact-card text-center contact-card--cyan">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Pooja.jpeg" alt="Pooja A">
+                            </div>
+                            <h3 class="contact-name">Pooja A</h3>
+                            <p class="contact-role">Lead Coordinator</p>
+                            <div class="contact-phone">
+                                <a href="tel:+919480994038">
+                                    <i class="fa-solid fa-phone"></i> +91 94809 94038
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-card text-center contact-card--green">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Gowrish H B.jpeg" alt="Gowrish H B">
+                            </div>
+                            <h3 class="contact-name">Gowrish H B</h3>
+                            <p class="contact-role">IEEE Chairman</p>
+                            <div class="contact-phone">
+                                <a href="tel:+916361184577">
+                                    <i class="fa-solid fa-phone"></i> +91 63611 84577
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-card text-center contact-card--red">
+                        <div class="contact-card-header"></div>
+                        <div class="contact-card-body">
+                            <div class="contact-avatar">
+                                <img src="assets/Shreya.jpeg" alt="Shreya Pal">
+                            </div>
+                            <h3 class="contact-name">Shreya Pal</h3>
+                            <p class="contact-role">Lead Organizer</p>
+                            <div class="contact-phone">
+                                <a href="tel:+918257002386">
+                                    <i class="fa-solid fa-phone"></i> +91 82570 02386
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>HackfiniX 2026</h3>
+                <p>Organized by Techfinity Club</p>
+                <p>Cambridge Institute of Technology North Campus</p>
+                <p>Bengaluru, India</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="https://unstop.com/hackathons/hackfinix-2026-cambridge-institute-of-technology-north-campus-bengaluru-1671676"
+                    target="_blank">Register</a>
+                <a href="https://ieee.citnc.co.in/" target="_blank">IEEE CITNC</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://chat.whatsapp.com/FaDT4SSxkDhIzCkRcoKRHn" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/hackfinix_citnc?igsh=MWd5eTlyYjZ0enE3aw==" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cambridge-institute-of-technology-north-campus/"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 HackfiniX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
